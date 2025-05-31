@@ -54,7 +54,7 @@ jobs:
           git config --global user.email "${{ secrets.GIT_EMAIL }}"`
           git add mlruns/0/$RUN_ID
           git commit -m 'Berhasil update mlruns' || echo "No changes to commit"
-          git push https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/YusriyahIM/Workflows_CI.git
+          git push https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/YusriyahIM/Workflow-CI.git
         env:
           GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
           GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
